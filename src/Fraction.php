@@ -87,7 +87,7 @@ class Fraction
         $this->numerator = (int) $numerator;
         $this->denominator = (int) $denominator;
 
-        $this->simplify();
+        // $this->simplify();
     }
 
     /**
@@ -211,7 +211,7 @@ class Fraction
      *
      * @return integer
      */
-    private function simplify()
+    public function simplify()
     {
         $gcd = $this->getGreatestCommonDivisor();
 
